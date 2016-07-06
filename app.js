@@ -30,7 +30,7 @@ var getQuote = function() {
 
     $("#twitter").attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + quote + '" ' + author));
   });
-}
+};
 
 getQuote();
 
