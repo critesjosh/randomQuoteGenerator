@@ -2,7 +2,8 @@ var author = '';
 var quote = '';
 
 var getQuote = function() {
-  $.getJSON( "https://jsonp.afeld.me/?callback=&url=http://quotes.stormconsultancy.co.uk/random.json", {
+  $.ajax( "http://quotes.stormconsultancy.co.uk/random.json", {
+    dataType: 'jsonp'
     }).done(function(data){
     console.log(data);
     author = data.author;
